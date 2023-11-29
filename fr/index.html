@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explorez l'univers de la science-fiction à travers quelques articles présentant des oeuvres futuristes.
+  En bonus, mes pensées personnelles !">
+  <title>Accueil - Mind_Uploading.exe</title>
+  <link rel="stylesheet" href="../src/css/styles.css">
+  <script defer src="https://unpkg.com/alpinejs"></script>
+  <link rel="icon" href="../public/icones/exe_logo.svg">
+</head>
+
+<body class="background">
+  <div class="header">
+    <header x-data="{menuIsOpen : false}">
+      <div class="header__items">
+        <button class="header__menubtn" @click="menuIsOpen= ! menuIsOpen" aria-expanded="true" aria-controls="mainNav"
+          aria-label="menu">
+          <img src="../public/icones/menu_icon.svg" alt="Menu">
+        </button>
+        <a class="header__logo" href="index.html">
+          <img src="../public/icones/exe_logo.svg" alt="Logo Mind_Uploading.exe"></a>
+        <img class="header__iconsb" src="../public/icones/search_icon.svg" alt="Rechercher">
+        <nav class="menu menu__scroll" id="mainNav" x-show="menuIsOpen">
+          <div class="header__flextitles--menu">
+            <a class="header__maintitle--menu" href="index.html">Mind_Uploading.exe</a>
+            <p class="header__pagetitle--menu">MENU</p>
+          </div>
+          <ul class="menu__list" x-show="menuIsOpen" x-transition:enter.duration.800ms
+            x-transition:leave.duration.300ms>
+            <li class="menu__item"><a href="index.html">ACCUEIL</a></li>
+            <li class="menu__item">
+              ARTICLES
+              <ul class="menu__list-articles">
+                <li class="menu__article">
+                  <a class="menu__article-link" href="book.html">► DES ANDROÏDES ET DES HOMMES</a>
+                </li>
+                <li class="menu__article">
+                  <a class="menu__article-link" href="movie.html">► ENTRE AMOUR ET SOLITUDE</a>
+                </li>
+                <li class="menu__article">
+                  <a class="menu__article-link" href="song.html">► CŒUR ÉLECTRONIQUE</a>
+                </li>
+                <li class="menu__article">
+                  <a class="menu__article-link" href="place.html">► VIVRE DANS UNE MACHINE</a>
+                </li>
+                <li class="menu__article">
+                  <a class="menu__article-link" href="hope.html">► UNE GÉNÉRATION ENGAGÉE</a>
+                </li>
+                <li class="menu__article">
+                  <a class="menu__article-link" href="regret.html">► L'IMPACT DES RÉSEAUX SOCIAUX</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item"><a href="about.html">À PROPOS</a></li>
+            <li class="menu__item"><a href="contact.html">CONTACT</a></li>
+            <li class="menu__language">
+              <a class="menu__language__link" href="../en/index.html">EN
+                <img class="menu__language__icon" src="../public/icones/language_icon.svg" alt="Site en anglais"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__flextitles">
+        <a class="header__maintitle" href="index.html">Mind_Uploading.exe</a>
+        <h4 class="header__pagetitle">ACCUEIL</h4>
+      </div>
+    </header>
+  </div>
+  <main>
+    <article class="intro">
+      <h1 class="intro__title">Bienvenue sur Mind_Uploading.exe&nbsp;!</h1>
+      <p class="intro__text">
+        Avez-vous déjà pensé à créer votre propre <strong>capsule temporelle</strong>&nbsp;?
+        Personnellement, j'ai choisi d'en faire une sous forme de site web.
+        Ici, vous découvrirez mon univers à travers quelques articles&nbsp;: livre,
+        film, musique et plus encore&nbsp;!
+      </p>
+    </article>
+
+    <article class="mainarticle">
+      <h2 class="mainarticle__title">LIVRE</h2>
+      <div class="mainarticle__block">
+        <img src="../public/img/preview/book.webp" class="mainarticle__img" alt="Couverture du livre Blade Runner">
+        <div class="mainarticle__text-btn">
+          <p class="mainarticle__text">
+            Philip K. Dick a écrit un des livres ayant eu le plus d'influence
+            sur le <strong>Cyberpunk</strong>, mouvement largement inspiré de l'atmosphère
+            sombre du roman. Entre réalité, illusions et dystopie, «&nbsp;Les
+            Androïdes rêvent-ils de moutons électriques&nbsp;?&nbsp;» se révèle être un
+            classique de la littérature <strong>SF</strong>.
+          </p>
+          <div class="mainarticle__button">
+            <img src="../public/icones/line_button.svg" class="mainarticle__buttonline" alt="">
+            <a class="mainarticle__buttontext" href="book.html" aria-label="Lire la suite de l'article sur ce livre">
+              LIRE LA SUITE
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="articlecard">
+      <h2 class="articlecard__title">FILM</h2>
+      <div class="articlecard__block">
+        <img class="articlecard__img" src="../public/img/preview/movie.webp" alt="Affiche du film Her">
+        <div class="articlecard__text-btn">
+          <p class="articlecard__text">
+            Her est un film d'anticipation qui en dit long sur les relations
+            humaines à l'ère du tout-connecté.
+          </p>
+          <div class="articlecard__button">
+            <img class="articlecard__buttonline" src="../public/icones/line_button.svg" alt="">
+            <a class="articlecard__buttontext" href="movie.html" aria-label="Lire la suite de l'article sur ce film">
+              LIRE LA SUITE
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="articlecard">
+      <h2 class="articlecard__title">MUSIQUE</h2>
+      <div class="articlecard__block">
+        <img class="articlecard__img" src="../public/img/preview/song.webp"
+          alt="Titre de la chanson Game of Love des Daft Punk">
+        <div class="articlecard__text-btn">
+          <p class="articlecard__text">
+            Game of Love, une chanson mélancolique des Daft Punk, un groupe
+            iconique de la scène électronique.
+          </p>
+          <div class="articlecard__button">
+            <img class="articlecard__buttonline" src="../public/icones/line_button.svg" alt="">
+            <a class="articlecard__buttontext" href="song.html"
+              aria-label="Lire la suite de l'article sur cette musique">
+              LIRE LA SUITE
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="articlecard">
+      <h2 class="articlecard__title">LIEU</h2>
+      <div class="articlecard__block">
+        <img class="articlecard__img" src="../public/img/preview/place.webp" alt="La Cité Radieuse de Le Corbusier">
+        <div class="articlecard__text-btn">
+          <p class="articlecard__text">
+            <strong>La Cité Radieuse</strong>, un bâtiment au nom évocateur… <br>Direction
+            Marseille pour une visite guidée&nbsp;!
+          </p>
+          <div class="articlecard__button">
+            <img class="articlecard__buttonline" src="../public/icones/line_button.svg" alt="">
+            <a class="articlecard__buttontext" href="place.html" aria-label="Lire la suite de l'article sur ce lieu">
+              LIRE LA SUITE
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="articlecard">
+      <h2 class="articlecard__title">ESPOIR</h2>
+      <div class="articlecard__block">
+        <img class="articlecard__img" src="../public/img/preview/hope.webp"
+          alt="Jeunes tenant des pancartes dans une manifestation">
+        <div class="articlecard__text-btn">
+          <p class="articlecard__text">
+            La génération Z n'est pas perdue ! Ces utopistes n'hésitent pas à
+            défendre leurs idées.
+          </p>
+          <div class="articlecard__button">
+            <img class="articlecard__buttonline" src="../public/icones/line_button.svg" alt="">
+            <a class="articlecard__buttontext" href="hope.html" aria-label="Lire la suite de l'article sur cet espoir">
+              LIRE LA SUITE
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="articlecard">
+      <h2 class="articlecard__title">REGRET</h2>
+      <div class="articlecard__block">
+        <img class="articlecard__img" src="../public/img/preview/regret.webp"
+          alt="Smartphone incrusté dans un cerveau qui saigne">
+        <div class="articlecard__text-btn">
+          <p class="articlecard__text">
+            À l'ère du numérique, quel impact ont les réseaux sociaux sur
+            notre perception du monde et de nous-même&nbsp;?
+          </p>
+          <div class="articlecard__button">
+            <img class="articlecard__buttonline" src="../public/icones/line_button.svg" alt="">
+            <a class="articlecard__buttontext" href="regret.html" aria-label="Lire la suite de l'article sur ce regret">
+              LIRE LA SUITE
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="footer">
+    <div class="footer__text">
+      <p>Lisa Cingolani MM1 - A1</p>
+      <a class="footer__email" href="mailto:lisa.cingolani@edu.univ-fcomte.fr">lisa.cingolani@edu.univ-fcomte.fr</a>
+    </div>
+    <div class="footer__blocks">
+      <p class="footer__legal">
+        Projet réalisé en 2022 dans le cadre d'un exercice pédagogique au <a class="footer__link"
+          href="http://mmimontbeliard.com"><strong>département
+            MMI de Montbéliard</strong></a>
+      </p>
+      <a class="footer__logo" href="http://mmimontbeliard.com">
+        <img class="footer__logo" src="../public/icones/mmi_logo.svg" alt="Logo du département MMI Montbéliard">
+      </a>
+      <nav class="footer__nav">
+        <div class="footer__btn" role="navigation">
+          <a class="footer__btn-item" href="about.html">À PROPOS </a>
+          <a class="footer__btn-item" href="contact.html">CONTACT </a>
+          <a class="footer__btn-item" href="otherprojects.html">AUTRES PROJETS
+          </a>
+        </div>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>
